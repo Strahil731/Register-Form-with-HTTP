@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Register Form</title>
+    <link rel="stylesheet" type="text/css" href="static/style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="center">
+            <h1>REGISTER</h1>
+            <form>
+                <div class="txt-field">
+                    <input type="text" name="fname" required />
+                    <span></span>
+                    <label>First Name</label>
+                </div>
+                <div class="txt-field">
+                    <input type="text" name="lname" required />
+                    <span></span>
+                    <label>Last Name</label>
+                </div>
+                <div class="txt-field">
+                    <input type="email" name="email" required />
+                    <span></span>
+                    <label>Email</label>
+                </div>
+                <div class="txt-field">
+                    <input type="password" name="password" required />
+                    <span></span>
+                    <label>Password</label>
+                </div>
+                <input name="submit" type="submit" value="Sign Up" />
+                <div class="signup_link">
+                    Have an Account? <a href="#">Login Here</a>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="register.js"></script>
+</body>
+
+</html>
