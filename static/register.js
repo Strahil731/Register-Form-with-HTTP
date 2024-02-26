@@ -20,6 +20,26 @@ function solve() {
     function getInfo(event) {
         event.preventDefault();
 
+        if (info.firstName.value === '') {
+            alert("Please input FIRST NAME!");
+            return;
+        }
+
+        if (info.lastName.value === '') {
+            alert("Please input LAST NAME!");
+            return;
+        }
+
+        if (info.email.value === '') {
+            alert("Please input EMAIL!");
+            return;
+        }
+
+        if (info.password.value === '') {
+            alert("Please input PASSWORD!");
+            return;
+        }
+
         fetch("https://register-form-user-default-rtdb.firebaseio.com/.json", {
             method: "POST",
             headers: {
